@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 1rem;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .attribution a {
+      border-radius: 1rem;
+      display: inline-block;
+      padding-inline: 1rem;
+      color: #fff;
+      background-color: hsl(0, 36%, 70%);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .attribution a:hover {
+      background-color: hsl(184, 100%, 50%);
+      color: hsl(0, 0%, 0%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <div class="container">
+      <div class="update">
+        <img src="images/logo.svg" alt="">
+        <H1><span>We're</span> coming soon</H1>
+
+        <P>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </P>
+
+        <form action="" class="form">
+          <div class="form-control">
+            <label for="email" class="hidden-label">Email Address</label>
+            <input type="text" name="email" id="email" placeholder="Email Address">
+
+            <img src="images/icon-error.svg" alt="Error" id="error">
+
+            <button type="submit" id="submit"><img src="images/icon-arrow.svg" alt="Sign In"></button>
+
+            <small>Please provide a valid email</small>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="show-case">
+        <picture>
+          <source media="(max-width: 36em)" srcset="images/hero-mobile.jpg">
+          <source media="(min-width: 36em)" srcset="images/hero-desktop.jpg">
+          <img src="images/hero-desktop.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Mohan823">Mohan Krishna</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
